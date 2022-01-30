@@ -23,7 +23,7 @@ void setup() {
   }
 
   // check to see if the SD has successfully initialized
-  Serial.println("Initializing SD");
+  Serial.println("Initializing SD card");
   if (!card.init(SPI_HALF_SPEED, 10)) {
     Serial.println("SD initialization failed");
     while (1);
@@ -66,5 +66,5 @@ void loop() {
     Serial.println("Error opening file");
   }
   
-  delay(1000);
+  delay(60000);
 }
